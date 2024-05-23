@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerri | Responsive Bootstrap</title>
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <!-- fontAwsome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#scroll-nav">
+  <!-- nav-bar -->
+  <nav class="navbar navbar-expand-lg position-fixed w-100 z-3" id="scroll-nav">
+    <div class="container my-2">
+      <a class="navbar-brand logo" href="#"><h2 class="fw-bold">Kerri</h2>
+      </a>
+      
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#client">Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- home -->
+
+  <header id="home">
+    <div class="text-center d-flex flex-column align-items-center justify-content-center h-100 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="fw-medium mb-4">Welcome</p>
+            <h1 class="fw-medium text-capitalize mb-0">
+              I'M <span class="type"></span>
+            </h1>
+            <p class="mx-auto mt-4 header-desc lh-lg">
+              It is a long established fact that a reader will be of a page
+              when established fact looking at its layout.
+            </p>
+            <div class="header-cv mt-4 pt-2">
+              <a href="#" class="text-uppercase btn btn-outline-light rounded-pill">Download cv</a>
+            </div>
+            <a class="about-link border rounded-pill" href="#about">
+              <div class="about-icon"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed-icons">
+        <div id="darkMode" class="dark-icon position-fixed d-grid" onclick="darkMode()">
+          <i id="fa-moon" class="fa-solid fa-moon m-auto"></i>
+          <i id="fa-sun" class="fa-solid fa-sun d-none"></i>
+        </div>
+        <div class="color-switcher">
+          <div id="setting-icon" class="setting-icon d-grid " onclick="colorPalet()">
+            <i class="fa-solid fa-gear fa-spin m-auto"></i>
+          </div>
+          <div class="them-btn d-flex flex-wrap justify-content-center flex-row">
+            <span class="theme" data-color="#e65f78" style="background-color: #e65f78;"></span>
+            <span class="theme" data-color="#37b8df" style="background-color:#37b8df ;"></span>
+            <span class="theme" data-color="#31b164" style="background-color: #31b164;"></span>
+            <span class="theme" data-color="#5d69f6" style="background-color:#5d69f6 ;"></span>
+            <span class="theme" data-color="#87ceeb" style="background-color: #87ceeb;"></span>
+            <span class="theme" data-color="#f2b31a" style="background-color:#f2b31a ;"></span>
+          </div>
+        </div>
+        <div id="top" class="up-icon position-fixed" onclick="scrollTop()">
+          <a href="#home"><i class="fa-solid fa-angle-up text-white"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 offset-lg-1">
+            <div class="img-container">
+              <img src="img/about.jpg" class="img-thumbnail" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-desc pe-lg-5">
+              <h2 class="mt-3"><span class="fw-bold">About</span> Me</h2>
+              <h4 class="mt-4">
+                Hello!
+                <span class="fw-bold"> I'M Kerri Deo. </span>
+              </h4>
+              <p class="mt-4 text-muted">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <p class="mt-4 text-muted">
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+              <p class="text-muted mt-4">
+                There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some
+                form, by injected humour, or randomised words which don't look
+                even slightly believable.
+              </p>
+              <div class="icons d-flex align-items-center">
+                <div class="icon border border-2 rounded-circle d-grid">
+                  <i class="fa-solid fa-globe m-auto fa-lg"></i>
+                </div>
+                <div class="icon border border-2 rounded-circle d-grid">
+                  <i class="fa-brands fa-facebook-f m-auto fa-lg"></i>
+                </div>
+                <div class="icon border border-2 rounded-circle d-grid">
+                  <i class="fa-brands fa-linkedin-in m-auto fa-lg"></i>
+                </div>
+                <div class="icon border border-2 rounded-circle d-grid">
+                  <i class="fa-brands fa-twitter m-auto fa-lg"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service -->
+    <section id="service" class="section">
+      <div class="container px-lg-5 text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="service-caption">
+              <h2 class="text-capitalize">
+                Our<span class="fw-semibold"> Services</span>
+              </h2>
+              <p class="mt-4 text-muted header-desc mx-auto">
+                It is a long established fact that a reader will be of a page
+                when established fact looking at its layout.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="single-servie border rounded p-4 mt-4">
+                <div class="service-icon">
+                  <div class="icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
+                </div>
+                <div class="service-desc mt-4">
+                  <h5 class="mb-0">Graphic Design</h5>
+                  <p class="mt-4">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-servie border rounded p-4 mt-4">
+                <div class="service-icon">
+                  <div class="icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                  </div>
+                </div>
+                <div class="service-desc mt-4">
+                  <h5 class="mb-0">Unlimited Color</h5>
+                  <p class="mt-4">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-servie border rounded p-4 mt-4">
+                <div class="service-icon">
+                  <div class="icon">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                  </div>
+                </div>
+                <div class="service-desc mt-4">
+                  <h5 class="mb-0">Media Marketing</h5>
+                  <p class="mt-4">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-servie border rounded p-4 mt-4">
+                <div class="service-icon">
+                  <div class="icon"><i class="fa-regular fa-copy"></i></div>
+                </div>
+                <div class="service-desc mt-4">
+                  <h5 class="mb-0">Unlimited Wifi</h5>
+                  <p class="mt-4">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-servie border rounded p-4 mt-4">
+                <div class="service-icon">
+                  <div class="icon">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                  </div>
+                </div>
+                <div class="service-desc mt-4">
+                  <h5 class="mb-0">Responsive Design</h5>
+                  <p class="mt-4">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="single-servie border rounded p-4 mt-4">
+                <div class="service-icon">
+                  <div class="icon">
+                    <i class="fa-solid fa-file-pen"></i>
+                  </div>
+                </div>
+                <div class="service-desc mt-4">
+                  <h5 class="mb-0">Easy to customize</h5>
+                  <p class="mt-4">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- freelancer -->
+    <section class="section">
+      <div class="container text-center">
+        <h2 class="fw-semibold">I Am Available For Freelancer.</h2>
+        <div class="hire-me mt-4">
+          <a href="" class="hire-btn btn text-white text-uppercase fw-bold">Hire me!</a>
+        </div>
+      </div>
+    </section>
+    <!-- client -->
+    <section id="client" class="section">
+      <div class="container px-lg-5 text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="service-caption">
+              <h2 class="text-capitalize">
+                Our<span class="fw-semibold"> Client</span>
+              </h2>
+              <p class="mt-4 text-muted header-desc mx-auto">
+                It is a long established fact that a reader will be of a page
+                when established fact looking at its layout.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-4">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner mt-4">
+                <div class="carousel-item active" data-bs-interval="6000">
+                  <div class="client-icon mb-4">
+                    <div class="icon">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <img src="img/testi-1.jpg" class="img-thumbnail rounded-circle" alt="..." />
+                  <div class="carousel-caption d-md-block">
+                    <p class="mb-4">
+                      " The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed
+                      to using 'Content here."
+                    </p>
+                    <h6 class="fw-normal">
+                      - Ebony verty, <span class="fw-semibold"> Envato</span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                  <div class="client-icon mb-4">
+                    <div class="icon">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <img src="img/testi-2.jpg" class="img-thumbnail rounded-circle" alt="..." />
+                  <div class="carousel-caption d-md-block">
+                    <p class="mb-4">
+                      " The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed
+                      to using 'Content here."
+                    </p>
+                    <h6 class="fw-normal">
+                      - Ebony verty, <span class="fw-semibold"> Envato</span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                  <div class="client-icon mb-4">
+                    <div class="icon">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                  </div>
+                  <img src="img/testi-3.jpg" class="img-thumbnail rounded-circle" alt="..." />
+                  <div class="carousel-caption d-md-block">
+                    <p class="mb-4">
+                      " The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed
+                      to using 'Content here."
+                    </p>
+                    <h6 class="fw-normal">
+                      - Ebony verty, <span class="fw-semibold"> Envato</span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--works -->
+    <section id="portfolio" class="section">
+      <div class="container px-lg-5 text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="service-caption">
+              <h2 class="text-capitalize">
+                Our<span class="fw-semibold"> Works</span>
+              </h2>
+              <p class="mt-4 text-muted header-desc mx-auto">
+                It is a long established fact that a reader will be of a page
+                when established fact looking at its layout.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="mt-5">
+              <ul class="nav nav-pills mb-3 d-flex justify-content-center align-items-center" id="pills-tab"
+                role="tablist">
+                <li class="nav-item role=" presentation">
+                  <button class="nav-link text-uppercase  active" id="pills-all-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                    All
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase " id="pills-seo-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-seo" type="button" role="tab" aria-controls="pills-seo"
+                    aria-selected="false">
+                    SEO
+                  </button>
+                </li>
+                <li class="nav-item " role="presentation">
+                  <button class="nav-link text-uppercase" id="pills-webdesign-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-webdesign" type="button" role="tab" aria-controls="pills-webdesign"
+                    aria-selected="false">
+                    Web Design
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase " id="pills-work-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-work" type="button" role="tab" aria-controls="pills-work"
+                    aria-selected="false">
+                    Work
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase " id="pills-wordpress-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-wordpress" type="button" role="tab" aria-controls="pills-wordpress"
+                    aria-selected="false">
+                    WordPress
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                  tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageAll-1">
+                          <img src="img/1.jpg" class='w-100 rounded' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageAll-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/1.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageAll-2">
+                          <img src="img/2.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageAll-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/2.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageAll-3">
+                          <img src="img/3.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageAll-3" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/3.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageAll-4">
+                          <img src="img/4.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageAll-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/4.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageAll-5">
+                          <img src="img/5.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageAll-5" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/5.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageAll-6">
+                          <img src="img/6.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageAll-6" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/6.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-seo" role="tabpanel" aria-labelledby="pills-seo-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageseo-1">
+                          <img src="img/2.jpg" class='w-100 rounded' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageseo-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/2.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageseo-2">
+                          <img src="img/3.jpg" class='w-100 rounded' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageseo-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/3.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageseo-3">
+                          <img src="img/5.jpg" class='w-100 rounded' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageseo-3" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/5.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-webdesign" role="tabpanel" aria-labelledby="pills-webdesign-tab"
+                  tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagewebdesign-1">
+                          <img src="img/1.jpg" class='w-100 rounded' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagewebdesign-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/1.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagewebdesign-2">
+                          <img src="img/2.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagewebdesign-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/2.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagewebdesign-4">
+                          <img src="img/4.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagewebdesign-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/4.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagewebdesign-5">
+                          <img src="img/5.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagewebdesign-5" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/5.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagewebdesign-6">
+                          <img src="img/6.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagewebdesign-6" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/6.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab"
+                  tabindex="0">
+                  <div class="row">
+
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagework-2">
+                          <img src="img/2.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagework-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/2.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imagework-4">
+                          <img src="img/4.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagework-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/4.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-wordpress" role="tabpanel" aria-labelledby="pills-wordpress-tab"
+                  tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageword-1">
+                          <img src="img/1.jpg" class='w-100 rounded' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageword-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/1.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageword-3">
+                          <img src="img/3.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageword-3" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/3.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="inner-work mt-4">
+
+                        <!-- Button trigger modal -->
+                        <div type="button" class="position-relative overflow-hidden" data-bs-toggle="modal"
+                          data-bs-target="#imageword-4">
+                          <img src="img/4.jpg" class='w-100' alt="">
+                          <div
+                            class="overlay-image position-absolute rounded w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div class="caption">
+                              <span class="mb-2">category</span>
+                              <h6>Project Title</h6>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imageword-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="img/4.jpg" class='w-100' alt="">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+
+    <section id="blog" class="section">
+      <div class="container px-lg-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="service-caption">
+              <h2 class="text-capitalize">
+                Our<span class="fw-semibold"> Blog</span>
+              </h2>
+              <p class="mt-4 text-muted header-desc mx-auto">
+                It is a long established fact that a reader will be of a
+                page when established fact looking at its layout.
+              </p>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <div class="inner-blog">
+                <div class="card border-0 px-1 py-1">
+                  <img src="img/blog-1.jpg" class="card-img-top img-thumbnail border-0 rounded-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title mb-2 pb-2">There are many variations</h5>
+                    <div class="card-text text-secondary">
+                      <p class="mb-3">11 March 2018 <span>By Kerri</span></p>
+                      <p>Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames.
+                        Lobortis ultricies.</p>
+                    </div>
+                    <a class="text-decoration-none text-capitalize">read more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="inner-blog">
+                <div class="card border-0 px-1 py-1">
+                  <img src="img/blog-2.jpg" class="card-img-top img-thumbnail border-0 rounded-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title mb-2 pb-2">Contrary to popular belief</h5>
+                    <div class="card-text text-secondary">
+                      <p class="mb-3">18 March 2018 <span>By Kerri</span></p>
+                      <p>Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames.
+                        Lobortis ultricies.</p>
+                    </div>
+                    <a class="text-decoration-none text-capitalize">read more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="inner-blog ">
+                <div class="card border-0 px-1 py-1">
+                  <img src="img/blog-3.jpg" class="card-img-top img-thumbnail border-0 rounded-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title mb-2 pb-2">Lorem Ipsum is not simply</h5>
+                    <div class="card-text text-secondary">
+                      <p class="mb-3">22 March 2018 <span>By Kerri</span></p>
+                      <p>Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames.
+                        Lobortis ultricies.</p>
+                    </div>
+                    <a class="text-decoration-none text-capitalize">read more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+      <div class="container px-lg-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="service-caption">
+              <h2 class="text-capitalize">
+                <span class="fw-semibold"> Contact</span> Us
+              </h2>
+              <p class="mt-4 text-muted header-desc mx-auto">
+                It is a long established fact that a reader will be of a
+                page when established fact looking at its layout.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-9 mt-3 m-auto">
+            <div class="row mt-4 gy-5">
+              <div class="col-lg-4">
+                <div class="inner-contact d-flex justify-content-center align-items-center flex-column">
+                  <div class="icon mb-3">
+                    <i class="fa-solid fa-mobile-android-alt fa-3x"></i>
+                  </div>
+                  <h5 class="mb-0 fw-semibold">Call Us On</h5>
+                  <a class="text-secondary text-decoration-none" href="tel:+985 123 7856">
+                    +985 123 7856
+                  </a>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+                <div class="inner-contact d-flex justify-content-center align-items-center flex-column">
+                  <div class="icon mb-3">
+                    <i class="fa-regular fa-envelope fa-3x"></i>
+                  </div>
+                  <h5 class="mb-0 fw-semibold">Email Us At</h5>
+                  <a href="mailto:Website.Kerri@gmail.com" class="text-secondary text-decoration-none">
+                    Website.Kerri@gmail.com
+                  </a >
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+                <div class="inner-contact d-flex justify-content-center align-items-center flex-column">
+                  <div class="icon mb-3">
+                    <i class="fa-solid fa-location-dot fa-3x"></i>
+                  </div>
+                  <h5 class="mb-0 fw-semibold">Visit Office</h5>
+                  <span class="text-secondary ">
+                    202, Grasselli Street , Conway.
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 gy-4">
+          <div class="col-lg-5 offset-lg-1">
+            <div class="inner-form">
+              <input class="form-control form-control-lg border-2" type="text" placeholder="Your name..." aria-label="default input example">
+              </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="inner-form ">
+              <input class="form-control form-control-lg border-2" type="email" placeholder="Your email..." aria-label="default input example">
+            </div>
+          </div>
+          <div class="col-lg-10 offset-lg-1">
+            <div class="inner-form ">
+              <input class="form-control form-control-lg border-2" type="text" placeholder="Your Subject..." aria-label="default input example">
+            </div>
+          </div>
+          <div class="col-lg-10 offset-lg-1">
+            <div class="inner-form ">
+              <textarea class="form-control form-control-lg border-2" rows="4" type="text" placeholder="Your message..." aria-label="default input example"></textarea>
+            </div>
+          </div>
+          <div class="col-lg-2 offset-lg-9">
+            <div class="inner-form">
+             <button class="text-uppercase">send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="overflow-hidden">
+  <div class="container my-5">
+<div class="icons d-flex flex-sm-column flex-md-row align-items-center justify-content-center ">
+  <div class="icon me-3 mb-3 d-grid">
+    <i class="fa-brands fa-facebook-f m-auto"></i>
+  </div>
+  <div class="icon me-3 mb-3 d-grid">
+    <i class="fa-brands fa-linkedin-in m-auto"></i>
+  </div>
+  <div class="icon me-3 mb-3 d-grid">
+    <i class="fa-brands fa-pinterest-p m-auto"></i>
+  </div>
+  <div class="icon me-3 mb-3 d-grid">
+    <i class="fa-brands fa-twitter m-auto"></i>
+  </div>
+
+</div>
+<p class="text-center mt-2">2024 © Kerri. Design by SRBThemes.</p>
+  </div>
+
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
